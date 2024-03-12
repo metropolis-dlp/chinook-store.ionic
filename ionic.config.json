@@ -1,0 +1,7 @@
+{
+  "name": "Chinook Demo App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
