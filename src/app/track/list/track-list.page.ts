@@ -11,7 +11,9 @@ import {
 } from "@ionic/angular/standalone";
 import {Component, OnInit} from "@angular/core";
 import {addIcons} from "ionicons";
-import {cloudDownload} from "ionicons/icons";
+import {cartOutline} from "ionicons/icons";
+import {TrackService} from "../track.service";
+import {TrackModel} from "../track.model";
 
 @Component({
   selector: 'app-track-list',
@@ -22,11 +24,14 @@ import {cloudDownload} from "ionicons/icons";
     IonItem, IonLabel, IonBackButton, IonNote, IonItemOptions, IonIcon, IonItemOption, IonButton, IonItemSliding, IonAvatar]
 })
 export class TrackListPage implements OnInit {
-  constructor() {
-    addIcons({ cloudDownload });
+  tracks: TrackModel[] = [];
+
+  constructor(private trackService: TrackService) {
+    addIcons({ cartOutline });
   }
 
   ngOnInit() {
+    this.trackService.query().subscribe(tracks => this.tracks = tracks);
   }
 
 }

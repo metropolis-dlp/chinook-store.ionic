@@ -6,7 +6,7 @@ import { addIcons } from 'ionicons';
 import {
   albumsOutline,
   albumsSharp,
-  homeOutline, homeSharp
+  homeOutline, homeSharp, musicalNoteOutline, musicalNoteSharp
 } from 'ionicons/icons';
 
 @Component({
@@ -19,10 +19,11 @@ import {
 export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' },
+    { title: 'Artists', url: '/artist/list', icon: 'musical-note' },
     { title: 'Albums', url: '/album/list', icon: 'albums' }
   ];
 
   constructor() {
-    addIcons({ homeOutline, homeSharp, albumsOutline, albumsSharp });
+    addIcons({ homeOutline, homeSharp, albumsOutline, albumsSharp, musicalNoteSharp, musicalNoteOutline });
   }
 }

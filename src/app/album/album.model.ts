@@ -1,5 +1,5 @@
-export interface AlbumModel {
-  id: number;
-  name: string;
+import {SimpleItemModel} from "../common/simple-item.model";
+
+export interface AlbumModel extends SimpleItemModel{
   artistName: string;
 }

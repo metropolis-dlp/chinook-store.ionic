@@ -1,0 +1,40 @@
+{
+  "artists": [
+    { "id": 1, "name": "AC/DC" },
+    { "id": 2, "name": "Accept" },
+    { "id": 3, "name": "Aerosmith" },
+    { "id": 4, "name": "Alanis Morissette" }
+  ],
+  "albums": [
+    { "id": 1, "name": "For Those About To Rock We Salute You", "artistId": 1 },
+    { "id": 2, "name": "Balls to the Wall", "artistId": 2 },
+    { "id": 3, "name": "Restless and Wild", "artistId": 2 },
+    { "id": 4, "name": "Let There Be Rock", "artistId": 1 },
+    { "id": 5, "name": "Big Ones", "artistId": 3 },
+    { "id": 6, "name": "Jagged Little Pill", "artistId": 4 }
+  ],
+  "tracks": [
+    { "id": 1, "name": "For Those About To Rock (We Salute You)", "albumId": 1, "length": 343719 },
+    { "id": 2, "name": "Put The Finger On You", "albumId": 1, "length": 205662 },
+    { "id": 3, "name": "Let's Get It Up", "albumId": 1, "length": 233926 },
+    { "id": 4, "name": "Inject The Venom", "albumId": 1, "length": 210834 },
+    { "id": 5, "name": "Snowballed", "albumId": 1, "length": 203102 },
+    { "id": 6, "name": "Evil Walks", "albumId": 1, "length": 263497 },
+    { "id": 7, "name": "C.O.D.", "albumId": 1, "length": 199836 },
+    { "id": 8, "name": "Breaking The Rules", "albumId": 1, "length": 263288 },
+    { "id": 9, "name": "Night Of The Long Knives", "albumId": 1, "length": 205688 },
+    { "id": 10, "name": "Spellbound", "albumId": 1, "length": 270863 },
+    { "id": 11, "name": "Balls to the Wall", "albumId": 2, "length": 342562 },
+    { "id": 12, "name": "Fast As a Shark", "albumId": 3, "length": 230619 },
+    { "id": 13, "name": "Restless and Wild", "albumId": 3, "length": 252051 },
+    { "id": 14, "name": "Princess of the Dawn", "albumId": 3, "length": 375418 },
+    { "id": 15, "name": "Go Down", "albumId": 4, "length": 331180 },
+    { "id": 16, "name": "Dog Eat Dog", "albumId": 4, "length": 215196 },
+    { "id": 17, "name": "Let There Be Rock", "albumId": 4, "length": 366654 },
+    { "id": 18, "name": "Bad Boy Boogie", "albumId": 4, "length": 267728 },
+    { "id": 19, "name": "Problem Child", "albumId": 4, "length": 325041 },
+    { "id": 20, "name": "Overdose", "albumId": 4, "length": 369319 },
+    { "id": 21, "name": "Hell Ain't A Bad Place To Be", "albumId": 4, "length": 254380 },
+    { "id": 22, "name": "Whole Lotta Rosie", "albumId": 4, "length": 323761 }
+  ]
+}

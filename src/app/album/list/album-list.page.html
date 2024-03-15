@@ -14,44 +14,20 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>For Those About To Rock We Salute You</ion-card-title>
-      <ion-card-subtitle>AC/DC</ion-card-subtitle>
-    </ion-card-header>
+  @for (album of albums; track album.id) {
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ album.name }}</ion-card-title>
+        <ion-card-subtitle>{{ album.artistName }}</ion-card-subtitle>
+      </ion-card-header>
 
-    <ion-button fill="clear">Buy</ion-button>
-    <ion-button fill="clear" [routerLink]="['/track/list']">Tracks</ion-button>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Balls to the Wall</ion-card-title>
-      <ion-card-subtitle>Accept</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-button fill="clear">Buy</ion-button>
-    <ion-button fill="clear">Tracks</ion-button>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Restless and Wild</ion-card-title>
-      <ion-card-subtitle>Aerosmith</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-button fill="clear">Buy</ion-button>
-    <ion-button fill="clear" [routerLink]="['/track/list']">Tracks</ion-button>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Let There Be Rock</ion-card-title>
-      <ion-card-subtitle>AC/DC</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-button fill="clear">Buy</ion-button>
-    <ion-button fill="clear">Tracks</ion-button>
-  </ion-card>
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" [routerLink]="['/track/list']">
+        <ion-icon slot="icon-only" name="list-outline"></ion-icon>
+      </ion-button>
+    </ion-card>
+  }
 
 </ion-content>
