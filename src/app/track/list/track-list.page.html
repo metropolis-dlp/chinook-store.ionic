@@ -1,9 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      @if (albumName) {
+        <ion-back-button></ion-back-button>
+      } @else {
+        <ion-menu-button></ion-menu-button>
+      }
     </ion-buttons>
-    <ion-title>Tracks</ion-title>
+    <ion-title>{{ albumName ?? 'Albums' }}</ion-title>
   </ion-toolbar>
 </ion-header>
 

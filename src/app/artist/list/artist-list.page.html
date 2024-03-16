@@ -16,7 +16,7 @@
 
   <ion-list>
     @for(artist of artists; track artist.id){
-      <ion-item [button]="true" [routerLink]="['/album/list', artist.id]">
+      <ion-item [button]="true" [routerLink]="['/album/list' ]" [queryParams]="{artistId: artist.id, artistName: artist.name}" >
         <ion-label>{{ artist.name }}</ion-label>
         <ion-note slot="end">{{ artist.albumsCount }} album{{ artist.albumsCount > 1 ? 's' : '' }} </ion-note>
         <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
